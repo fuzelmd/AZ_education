@@ -12,8 +12,7 @@
    <!-- fonts end -->
    <style>
         *{
-            border: 0px !important;
-            /* color: black; */
+            border: 0px;           /* color: black; */
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
@@ -271,23 +270,33 @@ align-items: center;
 background-color: white;
 } 
 .featured-courses .all-courses{
-    width: 70%;
+    width: 60%;
     height: 80%;
     border: 2px solid blue;
     display: grid;
-    row-gap: 2px;
-    column-gap: 2px;
     grid-auto-flow: column;
     grid-template-rows: 50% 50%;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 35% 30% 35%;
+    row-gap: 2px;
+    column-gap: 2px;
+    
 }
+/* .all-courses .courses-info{
+    border: 2px solid black;
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 35% 35% 30%;
+} */
 .all-courses .courses{
       width: 90%;
      height: 90%;
      margin: 1vh; 
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-     border: 1px solid green;
+  
 }
 .courses-img{
     width: 100%;
@@ -336,8 +345,186 @@ background-color: white;
 }
 
 /* end of featured courses */
+/* offer form */
+.offer-section{
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
 
+}
+#form-head{
+    border: 1px solid black;
+}
+.offer-content{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border: 2px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.offer-details{
+    height: 60%;
+    width: 60%;
+    border: 1px solid red;
+    padding: 3vh;
+    
+}
+.offer-background{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.offer-heading2{
+    border: 2px solid red;
+    font-size: 3rem;
+}
 
+    
+.offer-info{
+    margin: 2vh 0vh;
+    font-size: 1em;
+}
+.form{
+    height: 50%;
+    width: 25%;
+    
+   
+    display: grid;
+    column-gap: 5px;
+  
+   align-self: center;
+   background-color: #8686864f;
+   border-radius: 5%;
+  
+}
+.form .form-elements{
+   
+   
+    margin: 1vh 0vh;
+}
+.form-content{
+    display: grid;
+
+}
+#signup-btn{
+    background-color: red;
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+/* offer end */
+/* our teachers */
+.our-teachers{
+    height: 70vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-teachers h1{
+    height: 10%;
+    font-size: 2rem;
+    width: 50%;
+    border: 2px solid red;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.teachers{
+    display: grid;
+    grid-auto-flow: column;
+     grid-template-columns: 20% 20% 20% 20%;
+    border: 2px solid rgb(93, 0, 255);
+    justify-content: space-between;
+    width: 80%;
+    height: 50%;
+    /* row-gap: auto; */
+}
+.course-teachers{
+    border: 2px solid rgb(255, 0, 234);
+    
+    border-radius: 10%;
+    height: 50%;
+    text-align: center;
+}
+.teacher-img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10%;
+}
+/* end of our teachers */
+/* footer */
+.footer{
+    height: 50vh;
+    width: 100%;
+    color: white;
+    border: 2px solid red;
+    background-color: rgb(15, 14, 14);
+    
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.footer-background{
+    width: 100%;
+    height: 60%;
+    opacity: 0.5;
+    position: absolute;
+}
+.footer-background img{
+    height: 100%;
+    width: 100%;
+}
+.company-info{
+    height: 90%;
+    width: 100%;
+    border: 2px solid rgb(255, 213, 0);
+    display: flex;
+    position: relative;
+}
+.company-info .address{
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+
+}
+.company-info .newsletter{
+    width: 40%;
+    height: 70%;
+    border: 2px solid rgb(55, 0, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-info{
+    border: 1px solid red;
+}
+.newsletter input{
+    width: 60%;
+    height: 20%;
+}
+.company-copyrights{
+    height: 10% ;
+    width: 100%;
+    text-align: center;
+    border: 2px solid rgb(55, 0, 255);
+    position: relative;
+    align-self: flex-end;
+   
+}
+/* end of footer */
 /* media queries */
  @media screen and (max-width: 600px) {
     /* header .nav {
@@ -384,8 +571,8 @@ background-color: white;
 <img class="home-banner" src="/assets/home-banner.jpg" alt="">
 <div class="home-txt">
     <div class="content">
-    <h6>Best online coutrses</h6>
-    <h3>Made for lifelong lerners</h3>
+    <h6>Best online courses</h6>
+    <h3>Made for lifelong learners</h3>
     <button class="join-now-btn">JOIN NOW</button>
     </div>
 </div>
@@ -412,7 +599,9 @@ background-color: white;
 </div>
 <div class="featured-courses">
     <h1>Our Popular Courses</h1>
+    <!-- courses -->
     <div class="all-courses">
+        <!-- web course -->
         <div class="courses" id="web-design">
             <img src="/assets/web-design-course.jpg" alt="" class="courses-img">
             <div class="course-details">
@@ -427,6 +616,7 @@ background-color: white;
                <button class="course-buy">Buy Now</button>
         </div>
         </div>
+        <!-- web course end -->
         <div class="courses" id="digital-marketing">
             <img src="/assets/digital-marketing.jpg" alt="mo imgs" class="courses-img">
             <div class="course-details">
@@ -496,8 +686,96 @@ background-color: white;
                <span class="price">&dollar; 99</span>
                <button class="course-buy">Buy Now</button>
         </div>
-        </div>
+    </div>
 </div>
-    
+</div>
+<div class="offer-section">
+    <img class="offer-background" src="/assets/offer-background.jpg" alt="">
+    <div class="offer-content">
+    <div class="offer-details">
+          <h5 class="offer-heading1">Sign up now and get</h5>
+          <h2 class="offer-heading2">30% off on all courses</h2>
+          <p class="offer-info">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci magnam ad eaque nulla culpa rerum corporis nesciunt enim repellendus vero aperiam, amet nobis excepturi doloremque, modi quia quisquam aliquid explicabo!
+          </p>
+          <ul class="offer-advantges">
+              <li>1.get a free ebook</li>
+              <li>2.chat support</li>
+              <li>3.lifetime acess</li>
+          </ul>
+    </div>
+    <div class="form">
+           <form action="" class="form-content">
+               <input class="form-elements" type="text" placeholder="your name">
+               <input class="form-elements" type="email" placeholder="your email">
+               <select class="form-elements" name="" id="">
+                <option value="Default" disabled selected >Select a course</option>
+                <option value="">Digital-marketing</option>
+                <option value="">Web development</option>
+                <option value="">App development</option>
+                <option value="">marketing</option>
+                <option value="">communication</option>
+               </select>
+               <button class="form-elements" id="signup-btn" type="submit">Sign up</button>
+           </form>
+    </div>
+</div>
+</div>
+<div class="our-teachers">
+    <h1>Meet Our Teachers</h1>
+    <div class="teachers">
+        <div class="course-teachers">
+          <img class="teacher-img" src="/assets/teacher-1.jpg" alt="">
+           <h3 class="teacher-name">Wendy byrde</h3>
+           <h7 class="subject">Web design</h7>
+        </div>
+        <div class="course-teachers">
+           <img class="teacher-img" src="/assets/teacher-2.jpg" alt="">
+           <h3 class="teacher-name">Ruth langmore</h3>
+           <h7 class="subject">App development</h7>
+        </div>
+        <div class="course-teachers">
+            <img class="teacher-img" src="/assets/teacher-3.jpg" alt="">
+            <h3 class="teacher-name">Marty byrde</h3>
+            <h7 class="subject">Digital marketing</h7>
+
+        </div>
+        <div class="course-teachers">
+            <img class="teacher-img" src="/assets/teacher-4.jpg" alt="">
+            <h3 class="teacher-name">Navero</h3>
+            <h7 class="subject">Marketing</h7>
+        </div>
+
+    </div>
+
+</div>
+<footer class="footer">
+     <div class="footer-background">
+    <img  src="/assets/footer.jpg" alt="">
+    </div> 
+    <div class="company-info">
+        <div class="address">
+           <h4 class="address-head">Get in touch</h4>
+           <ul class="address-content">
+            <li id="location"><img src="/assets/icons8-address-24.png" alt=""> 123 street telangana india</li>
+            <li id="phone-num"> <img src="/assets/icons8-call-50.png" alt="">  123456789</li>
+            <li id="mail"> <img src="/assets/icons8-mail-50.png" alt=""> fakemail@gmail.com</li>
+           </ul>
+           <ul class="social-links">
+            <li> <img src="/assets/icons8-instagram-30.png" alt=""> </li>
+            <li> <img src="/assets/icons8-facebook-30.png" alt=""></li>
+            <li> <img src="/assets/icons8-twitter-30.png" alt=""></li>
+           </ul>
+        </div>
+        <div class="newsletter">
+           <h4>Join Newsletter</h4>
+           <p class="newsletter-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam a dolor libero suscipit eos dicta vero accusantium nam eius ab saepe necessitatibus molestiae, rem, labore illo ipsum doloribus reiciendis voluptates?</p>
+           <input type="email" placeholder="enter your email" name="" id=""> <button type="submit">signup</button>
+        </div>
+    </div>
+    <div class="company-copyrights">
+        © az education. All Rights Reserved. Designed by fuzel mohammad
+    </div>
+</footer>
 </body>
 </html>
