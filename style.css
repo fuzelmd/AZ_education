@@ -377,7 +377,7 @@ input[type=checkbox] {
 }
 
 .form-content {
-    border: 2px solid red;
+   
     width: 370px;
     height: 270px;
     border-radius: 10%;
@@ -498,7 +498,7 @@ input[type=checkbox] {
 }
 
 .address .social-links {
-    border: 2px solid red;
+    
     width: 70%;
     height: 20%;
     margin: 1vh;
@@ -751,7 +751,7 @@ input[type=checkbox] {
         
     }
     .form-content {
-        height: 120px;
+        height: 100px;
        
     }
     .form-content .form-elements {
@@ -768,14 +768,14 @@ input[type=checkbox] {
     .offer-info li{
         display: none;
     }
-
-
+    .home{
+        height: 97vh;
+    }
     /* offer end */
 }
 @media screen and (max-height: 550px) {
     .content{
         font-size: 6vw;
-        color: red;
     }
 }
 /* media queries end */
