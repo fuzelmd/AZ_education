@@ -165,8 +165,9 @@ input[type=checkbox] {
 
 .join-now-btn {
     color: white;
-    width: 20vh;
-    height: 5vh;
+    font-size: 10px;
+    width: 70px;
+    height: 40px;
     font-weight: bold;
     background-color: red;
 }
@@ -376,6 +377,7 @@ input[type=checkbox] {
 }
 
 .form-content {
+    border: 2px solid red;
     width: 370px;
     height: 270px;
     border-radius: 10%;
@@ -592,7 +594,6 @@ input[type=checkbox] {
         grid-template-columns: 50% 50%;
         grid-template-rows: 35% 30% 35%;
     }
-
     /* featured course end */
     /* our teachers  */
     .teachers {
@@ -625,7 +626,7 @@ input[type=checkbox] {
         display: none;
         position: absolute;
         background-color: rgba(255, 255, 255, 0.235);
-        margin-top: 3.5%;
+        margin-top: 25px;
         right: 0;
         left: 0;
         text-align: center;
@@ -652,8 +653,8 @@ input[type=checkbox] {
     }
 
     .dropdown {
-        left: 50%;
-        top: 30px;
+        left: 60%;
+        top: 22px;
         transform: translateX(35%);
     }
 
@@ -662,7 +663,7 @@ input[type=checkbox] {
     }
 
     .dropdown li {
-        width: 11em;
+        width: 33vw;
     }
 
     /* navbar end */
@@ -746,8 +747,15 @@ input[type=checkbox] {
 @media screen and (max-width: 550px) {
 
     /* offer */
+    .form{
+        
+    }
     .form-content {
-        height: 150px;
+        height: 120px;
+       
+    }
+    .form-content .form-elements {
+        width: 130px;
     }
 
     .offer-heading1 {
@@ -757,7 +765,17 @@ input[type=checkbox] {
     .offer-heading2 {
         font-size: 30px;
     }
+    .offer-info li{
+        display: none;
+    }
+
 
     /* offer end */
+}
+@media screen and (max-height: 550px) {
+    .content{
+        font-size: 6vw;
+        color: red;
+    }
 }
 /* media queries end */
