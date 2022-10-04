@@ -624,7 +624,9 @@ input[type=checkbox] {
 }
 
 @media (max-width: 768px) {
-
+    .home{
+        height: 97vh;
+    }
     /* navbar menu */
     .menu {
         display: none;
