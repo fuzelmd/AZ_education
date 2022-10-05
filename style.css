@@ -351,7 +351,7 @@ input[type=checkbox] {
 
 .offer-details {
     height: 100%;
-    width: 60%;
+    width: 40%;
     padding: 2%;
 }
 
@@ -370,7 +370,7 @@ input[type=checkbox] {
 
 .form {
     height: 100%;
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
